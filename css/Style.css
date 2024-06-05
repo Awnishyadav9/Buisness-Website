@@ -1,0 +1,531 @@
+@import url('Global.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.common {
+    background-color: var(--secondar-color);
+    padding: var(--gutter-padding);
+}
+
+body {
+    /* background-color: #353535; */
+    /* background: rgb(53,53,53); */
+    background-color: var(--secondar-color);
+}
+
+header {
+    background: var(--primary-color);
+    border-bottom: 1rem;
+    position: sticky;
+    top: 0;
+    border-bottom-right-radius: 50px 20px;
+    border-bottom-left-radius: 50px 20px;
+}
+
+nav {
+    justify-content: space-around;
+}
+
+.openSlidebar li:first-child{
+    margin-right: auto;
+    padding-top: 1.2rem;
+    padding-right: 19rem;
+    font-size: 2.5rem;
+    color: var(--secondar-color);
+}
+
+nav .openSlidebar {
+    display: flex;
+    margin-left: 1.5rem;
+}
+.openSlidebar .open i{
+    padding: 1rem 3rem 1rem 0;
+    font-size: 2.5rem;
+    color: var(--secondar-color);
+}
+.openSlidebar .open{
+    display: none;
+}
+
+nav .openSlidebar li,.closeSlidebar li {
+    list-style: none;
+    padding: 1.5rem 0 1.5rem 2rem;
+}
+
+nav .openSlidebar li a, .closeSlidebar li a{
+    text-decoration: none;
+    color: var(--secondar-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+li a i {
+    font-size: 1.7rem;
+    padding-left: 1rem;
+}
+.closeSlidebar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    background: var(--bg-color);
+    border-bottom: 1rem;
+    border-bottom-right-radius: 50px 20px;
+    border-bottom-left-radius: 50px 20px;
+    display: none;
+}
+.closeSlidebar div{
+    font-size: 2rem;
+    color: var(--secondar-color);
+    padding: 2rem 0 0 2rem;
+}
+.closeSlidebar div i{
+    float: right;
+    padding: 0 4rem 0 0;
+}
+.closeSlidebar  li{
+    text-align: center;
+}
+.content h1 {
+    font-size: var(--text-size);
+    font-weight: var(--bold);
+    color: var(--bg-color);
+}
+
+.content p {
+    padding-top: 1rem;
+    font-size: 29px;
+    font-weight: 700;
+    color: var(--bg-color);
+}
+
+.btn input,
+.btn button {
+    font-size: 20px;
+    margin-top: 2.5rem;
+    margin-left: .5rem;
+    padding: 1.2rem 2.4rem;
+    border: none;
+    border-radius: 29px;
+    cursor: pointer;
+}
+
+.btn input {
+    background: var(--hover-color);
+}
+
+.btn button {
+    color: grey;
+}
+#First-section .image{
+    width: 100%;
+}
+#First-section .image img {
+    height: 79vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+section#our-feature,#price,#contact-us {
+    background: var(--primary-color);
+}
+
+section#our-feature h1, #price h1,#contact-us h1 {
+    font-size: var(--text-size);
+    font-weight: var(--bold);
+    color: var(--secondar-color);
+    text-align: center;
+}
+
+section#our-feature .feature-cards {
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+section#our-feature .feature-cards .card {
+    padding: 2rem 1rem 2rem 1.5rem;
+    border: 3px solid var(--secondar-color);
+    border-radius: 40px;
+}
+
+.card h2 {
+    width: 13rem;
+    border: none;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 2rem;
+    background-color: var(--hover-color);
+    color: var(--secondar-color);
+
+}
+
+.card h2 span {
+    padding: .5rem 1.5rem;
+    margin-left: 1.5rem;
+    border-radius: 18px;
+    background-color: var(--secondar-color);
+    color: var(--primary-color);
+    border: none;
+}
+
+.card .img img {
+    width: 19rem;
+    height: 12rem;
+    margin-top: 2rem;
+    object-fit: fill;
+    border-radius: 30px;
+}
+
+.card .text h4 {
+    font-size: 50px;
+    color: var(--secondar-color);
+    padding: 1rem 0;
+    font-weight: 500;
+}
+
+.card .text p {
+    color: gray;
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+section#Strategy {
+    background: var(--primary-color);
+}
+
+section#Strategy .image {
+    display: flex;
+}
+
+section#Strategy .image img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 3px solid var(--secondar-color);
+    gap: 1rem;
+}
+
+.image span h2 {
+    text-align: center;
+    color: var(--secondar-color);
+    font-size: 39px;
+    padding-top: 1rem;
+}
+
+.image span {
+    margin-left: 3rem;
+}
+
+section#works h1,#Our-Team h1,#visit-us h1{
+    font-size: var(--text-size);
+    font-weight: var(--bold);
+    color: var(--hover-secondary-color);
+    text-align: center;
+}
+section#works .yt-image img {
+    width: 75vw;
+    height: 100vh;
+    border-radius: 30px;
+    margin-top: 1rem;
+    margin-left: 3.9rem;
+}
+
+
+section#Strategy ,#grow-up{
+    background: var(--primary-color);
+    display: flex;
+    gap: 9rem;
+}
+
+section#Strategy .left h1  {
+    font-size: var(--text-size);
+    font-weight: var(--bold);
+    color: var(--secondar-color);
+}
+
+.left p {
+    padding-top: 2rem;
+}
+
+section#Strategy p {
+    color: gray;
+    font-size: 29px;
+    line-height: 2.5rem;
+    text-align: justify;
+}
+
+.right .nbtn {
+    margin-top: 2rem;
+}
+
+.right .nbtn input {
+    background-color: var(--secondar-color);
+    color: var(--bg-color);
+}
+
+.right .nbtn button {
+    background-color: var(--hover-color);
+    color: black;
+}
+.card-contain{
+   display: flex;
+   column-gap: 2rem;
+}
+.card-contain .card{
+    border-radius: 30px;
+  border: 1px solid black;
+  background-color: var(--bg-color);
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  /* padding: 15rem 10rem; */
+}
+.card img{
+    width: 100%;
+    height: 70vh;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border: 1px solid black;
+}
+.card h3{
+    font-size: 34px;
+    color: var(--secondar-color);
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+}
+.card h6{
+    font-size: 25px;
+    color: var(--secondar-color);
+    padding-bottom: .5rem;
+}
+.logo .fa-brands{
+    font-size: 20px;
+    padding: 1rem;
+    border-radius: 1.9rem;
+    border: 1px solid var(--secondar-color);
+    color: var(--secondar-color);
+
+}
+.logo .fa-twitter{
+    margin: .5rem;
+}
+#grow-up{
+    background: var(--primary-color);
+    display: flex;
+    column-gap: 10rem;
+    /* gap: 5rem; */
+}
+#grow-up .process{
+    padding: 2rem;
+    justify-content:flex-end;
+}
+#grow-up .process h1{
+    color: var(--secondar-color);
+    font-size: 89px;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+#grow-up .process p{
+    font-size: 23px;
+    color: var(--grey-color);
+}
+.promotion{
+    padding: 3rem;
+    /* margin-right: 4rem; */
+    border: 5px solid var(--secondar-color);
+    border-radius: 30px;
+    justify-content: flex-end;
+    text-align: justify;
+
+}
+.promotion  h3{
+    font-size: 59px;
+    padding: 1rem;
+    color: var(--secondar-color);
+}
+.promotion p{
+    padding: 1rem 5rem 0 1rem;
+    font-size: 23px;
+    color: var(--grey-color);
+}
+#management-promotion{
+    column-gap: 5rem;
+    text-align: justify;
+}
+#management-promotion h1{
+    font-size: 49px;
+    padding: 1rem 0;
+    color: var(--bg-color);
+}
+#management-promotion p,.pcard p{
+    font-size: 23px;
+    color: var(--grey-color);
+}
+.management , .new-promotion{
+    padding: 4rem;
+    background:var( --next-green-color);
+    border-radius: 20px;
+}
+.price-card{
+    background-color: var(--bg-color);
+    border-radius: 30px;
+    padding: 0 1rem 2rem 1rem;
+    margin-top:3rem;
+}
+.pcard{
+    margin-left: 1rem;
+    padding: 1rem;
+}
+.icon i{
+    padding-top: 4rem;
+    font-size: 80px;
+    color: var(--bs-warning);
+}
+.pcard h3{
+    font-size: 39px;
+    color: var(--secondar-color);
+    padding: 1rem 0;
+}
+.pcard h2{
+    font-weight: var(--bold);
+    font-size: 80px;
+    color: var(--secondar-color);
+}
+.pcard span{
+    font-size: 25px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.gbtn input{
+    background-color: var(--secondar-color);
+    color: var(--hover-secondary-color);
+    font-weight: var(--bold);
+}
+hr{
+    margin-top: 2rem;
+    border: 3px solid var(--secondar-color);
+}
+.check{
+    list-style: none;
+    font-size: 25px;
+    color: var(--secondar-color);
+}
+.check li::before {
+    content: '✔';
+    color: var(--bs-warning); 
+    font-weight: var(--bold); 
+    padding: .5rem;
+    display: inline-block; 
+    width: 1em;
+    margin-right: 0.5em;
+}
+#visit-us{
+    text-align: center;
+}
+#visit-us h1{
+    color: var(--bg-color);
+}
+#visit-us iframe{
+    border-radius: 30px;
+}
+#contact-us form{
+    padding: var(--gutter-padding);
+}
+#contact-us form input,form textarea{
+    font-size: 20px;
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    border-left: 3px solid var(--secondar-color);
+}
+#contact-us form label{
+    width: 100%;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--secondar-color);
+    display: block;
+    margin-top: 1rem;
+}
+#Footer{
+    padding: 2rem;
+    text-align: center;
+    color: var(--bg-color);
+    font-size: 25px;
+}
+
+
+@media screen and (max-width:1000px) {
+   .flex,.feature-cards,.image,#Strategy,.card-contain{
+    flex-direction: column;
+   }
+   #visit-us iframe{
+    width: 100%;
+   }
+    .card{
+      width: auto;
+    }
+    #First-section .image{
+        margin-top: 2rem;
+        width: auto;
+    }
+    .card .img img,section#works .yt-image img {
+        width: 100%;
+        height: auto;
+    }
+    section#works .yt-image img{
+        margin-left: auto;
+    }
+    .management{
+        margin-bottom: 2rem;
+    }
+    #contact-us form,.promotion p,#management-promotion p{
+        padding: 1px;
+    }
+    .content h1,section#our-feature h1, #price h1,#contact-us h1,section#works h1,#Our-Team h1,#visit-us h1,section#Strategy .left h1,#grow-up .process h1{
+        font-size: 60px;
+    }
+    .promotion h3,#management-promotion h1,#management-promotion h1{
+        font-size: 25px;
+    }
+    .new-promotion,.management{
+        padding: 1.5rem;
+    }
+    .promotion{
+        width: auto;
+        padding: 1rem;
+    }
+    .common{
+        padding: 2rem 1.5rem;
+    }
+    .image span,.btn input{
+        margin-left: auto;
+    }
+    .content p{
+        font-weight: 300;
+        font-size: 25px;
+    }
+    #grow-up {
+        gap: 2rem;
+    }
+    .openSlidebar .hide{
+      display: none;
+    }
+    .openSlidebar .open{
+        display: inline;
+    }
+    .openSlidebar li:first-child{
+        padding-right: 1rem;
+    }
+}
